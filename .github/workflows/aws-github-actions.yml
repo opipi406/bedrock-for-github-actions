@@ -44,7 +44,7 @@ jobs:
 
       # 資料の解析を実行
       - name: Analyze requirements document
-        run: python analyze_requirements.py
+        run: python analyze_document.py
 
       # s3-copy-document.sh スクリプトを使用して解析結果を S3 にアップロード
       - name: Upload document files to S3
