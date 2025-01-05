@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bedrock-for-github-actions"
+version = "0.1.0"
+description = ""
+authors = ["opipi406 <opipi.work@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.35.92"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
