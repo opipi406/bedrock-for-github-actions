@@ -49,5 +49,4 @@ jobs:
       # s3-copy-document.sh スクリプトを使用して解析結果を S3 にアップロード
       - name: Upload document files to S3
         run: |
-          chmod +x s3-copy-document.sh
           BUCKET_NAME=${{ env.BUCKET_NAME }} GITHUB_REF_NAME=${{ github.ref_name }} ./s3-copy-document.sh
